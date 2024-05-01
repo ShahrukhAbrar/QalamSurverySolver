@@ -15,8 +15,8 @@ def feedback_sentence():
     return random_sentence
 
 
-USERNAME = 'sabrar.bese22mcs'
-PASSWORD = 'student@4567'
+USERNAME = ''
+PASSWORD = ''
 
 driver = webdriver.Chrome()
 driver.get('https://qalam.nust.edu.pk')
