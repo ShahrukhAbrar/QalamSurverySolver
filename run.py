@@ -15,8 +15,8 @@ def feedback_sentence():
     return random_sentence
 
 
-USERNAME = 'USERNAME HERE'
-PASSWORD = 'PASSWORD HERE'
+USERNAME = 'sabrar.bese22mcs'
+PASSWORD = 'student@4567'
 
 driver = webdriver.Chrome()
 driver.get('https://qalam.nust.edu.pk')
@@ -52,7 +52,7 @@ with open('survey_links.txt', 'r') as file:
             continue
 
         finally:
-            partial_heading_text = "Teacher Evaluation Form -2 (Fall-23)"
+            partial_heading_text = "Teacher Evaluation Form"
             xpath_expression = f"//div[@class='md-card-content']//h3[contains(text(), '{partial_heading_text}')]/ancestor::div[@class='md-card-content']"
             target_div = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, xpath_expression)))
             action = ActionChains(driver)
